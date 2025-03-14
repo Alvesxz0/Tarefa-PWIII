@@ -7,24 +7,15 @@ const produtos = [
 ]
 
 const getNome = (produtos) => {
-    return produtos.map(produto => [
-        produto.codigo,
-        produto.nome
-    ]);
+    return produtos.map(produtos => produtos.nome);
 }
 
 const getPreco = (produtos) => {
-    return produtos.map(produto => [
-        produto.codigo,
-        produto.preco
-    ]);
+    return produtos.map(produtos => produtos.preco);
 }
 
 const getCategoria = (produtos) => {
-    return produtos.map(produto => [
-        produto.codigo,
-        produto.categoria
-    ]);
+    return produtos.map(produtos => produtos.categoria);
 }
 
 const filterMasculino = (produtos) => {
